@@ -44,8 +44,3 @@ void Car::change_tyres(Compounds compound) {
 	this->current_tyres = new_tyres;
 }
 
-//std::ostream & operator <<(std::ostream & os, const Car & car)
-//{
-//	os << car.name;
-//	return os;
-//}

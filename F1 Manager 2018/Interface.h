@@ -8,11 +8,6 @@
 class Interface
 {
 public:
-	sf::Text Racer_Name;
-	sf::Text Racer_Surname;
-	sf::Text Lap_time;
-	sf::Text Whole_time;
-	sf::Text Team_Name;
 	sf::RenderWindow *window;
 	sf::Font *font;
 	std::string temp;
@@ -24,7 +19,6 @@ public:
 	Interface();
 	Interface(sf::RenderWindow *window);
 	~Interface();
-	void display_time_of_racer(Racer *R1);
 	void get_font();
 	void main_loop(Team *MyTeam);
 	void loop_data(Team *MyTeam);

@@ -27,13 +27,6 @@ void Interface::get_font() {
 		std::cout << "Font Error" << std::endl;
 	}
 }
-void Interface::display_time_of_racer(Racer *R1) {
-	this->Lap_time.setFont(*font);
-	this->Lap_time.setString(R1->show_time(R1->current_lap_time));
-	this->Lap_time.setCharacterSize(12); 
-	this->Lap_time.setFillColor(sf::Color::Red);
-	
-}
 void Interface::main_loop(Team *MyTeam) {
 	while (this->window->isOpen())
 	{
